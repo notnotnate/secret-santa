@@ -1,19 +1,17 @@
 Hello <%= @draw.giver.name %>,
 
-You are taking part in "<%= @draw.event.title %>".
+ "<%= @draw.event.title %>" is ON!
 
-This is a "Secret Santa" event, where participants are asked to make a gift to
-another random person. You make a gift to someone and you get a gift from
-someone else.
+This is a "Secret Santa" event. Please keep your gift assignments a secret.
 
-You should make a gift to:
+You have been assigned to be the Secret Santa for:
 
 <%= @draw.receiver.name %>
-
 <% if @draw.event.amount? and not @draw.event.amount.empty? %>
-The suggested amount for the gift is: <%= @draw.event.amount %>.
+
+The suggested price limit for the gift is: <%= @draw.event.amount %>.
 <% end %>
 
-This event has been created on Secret Santa Creator. For more information, visit:
+If you run into any snags, Nate Flint, from Oxbow Labs has kindly his services as Chief Technical Elf. 
 
-<%= root_url %>
+Feel free to email him at nate@oxbowlabs.com.
