@@ -1,12 +1,10 @@
 Hello <%= @draw.giver.name %>,
 
- "<%= @draw.event.title %>" is ON!
+ <%= @draw.event.title %> is ON!
 
 This is a "Secret Santa" event. Please keep your gift assignments a secret.
 
-You have been assigned to be the Secret Santa for:
-
-<%= @draw.receiver.name %>
+You have been assigned to be Secret Santa for <%= @draw.receiver.name %>!
 <% if @draw.event.amount? and not @draw.event.amount.empty? %>
 
 The suggested price limit for the gift is: <%= @draw.event.amount %>.
@@ -14,4 +12,4 @@ The suggested price limit for the gift is: <%= @draw.event.amount %>.
 
 If you run into any snags, Nate Flint, from Oxbow Labs has kindly his services as Chief Technical Elf. 
 
-Feel free to email him at nate@oxbowlabs.com.
+Feel free to email him at nate@oxbowlabs.com.s
